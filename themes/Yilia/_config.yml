@@ -6,7 +6,7 @@ menu:
 
 # SubNav
 subnav:
-  github: "#"
+  github: "https://github.com/MOxFIVE"
   weibo: "#"
   rss: "#"
   zhihu: "#"
@@ -35,7 +35,7 @@ google_analytics: ''
 favicon: /favicon.png
 
 #你的头像url
-avatar: 
+avatar: http://moxfive.xyz/wp-content/uploads/2015/08/Mihawk-312.png
 #是否开启分享
 share: true
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key

@@ -24,6 +24,15 @@
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
       <% } else { %>
+              <!-- Table of Contents -->
+        <% if (!index && post.toc != false){ %>
+              <!-- 默认显示文章目录，在文章---前输入toc: false关闭目录 -->
+              <!-- Show TOC in default, Hide TOC via putting "toc: false" before "---" at [post].md -->
+          <div id="toc" class="toc-article">
+            <strong class="toc-title">文章目录</strong>
+            <%- toc(post.content) %>
+          </div>
+        <% } %>
         <%- post.content %>
       <% } %>
     </div>

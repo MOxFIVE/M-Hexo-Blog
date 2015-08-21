@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 ### My Hexo Blog
 > - Store source code of my blog: http://MOxFIVE.xyz/;
@@ -11,7 +10,3 @@
 > - 采用[Hexo](https://hexo.io/)框架搭建；
 > - 使用国人litten的简洁主题：[Yilia](https://github.com/litten/hexo-theme-yilia)；
 > - 主题按个人需要的进行修改。
-
-=======
-# Hexo-Blog 
->>>>>>> parent of 05798f5... Update README.md

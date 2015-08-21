@@ -33,6 +33,21 @@
             <%- toc(post.content) %>
           </div>
         <% } %>
+        <input type="button" value="显示/隐藏文章目录" id="tocButton">
+        <script type="text/javascript">
+        var toc_button= document.getElementById("tocButton");
+        var toc_div= document.getElementById("toc");
+       /* Show or hide toc when click on tocButton.
+        通过点击设置的按钮显示或者隐藏文章目录.*/
+        toc_button.onclick=function(){
+          if(toc_div.style.display=="none"){
+            toc_div.style.display="block";
+          }
+          else{
+            toc_div.style.display="none";
+          }
+        }
+        </script>
         <%- post.content %>
       <% } %>
     </div>

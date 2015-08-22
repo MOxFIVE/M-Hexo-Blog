@@ -48,6 +48,17 @@
           }
         }
         </script>
+        
+        <div id="toTop">↑</div>
+        <script>
+        window.onload = function(){
+          var to_top = document.getElementById("toTop");
+          to_top.onclick = function(){
+            document.documentElement.scrollTop = document.body.scrollTop =0;
+          }
+        }  
+        </script>
+
         <%- post.content %>
       <% } %>
     </div>

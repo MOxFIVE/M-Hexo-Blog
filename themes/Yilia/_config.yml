@@ -2,16 +2,18 @@
 menu:
   主页: /
   所有文章: /archives
-  # 随笔: /tags/随笔
+  关于我:
+  #标签: /tags
+  建站日志: /2015/08/20/blog-building/
 
 # SubNav
 subnav:
-  github: "https://github.com/MOxFIVE"
-  weibo: "#"
-  rss: "#"
-  zhihu: "#"
+  github: https://github.com/MOxFIVE
+  weibo: http://weibo.com/yemzh
+  #rss: "#"
+  #zhihu: "#"
   #douban: "#"
-  #mail: "#"
+  mail: mo10005@outlook.com
   #facebook: "#"
   #google: "#"
   #twitter: "#"
@@ -61,4 +63,4 @@ friends:
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+aboutme: 专注于前端

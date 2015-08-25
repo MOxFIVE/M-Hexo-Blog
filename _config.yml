@@ -4,7 +4,7 @@
 
 # Site
 title: MOxFIVE's Blog
-subtitle: 迈入新世界，为了成为一名独当一面的前端工程师！
+subtitle: 迈入新世界，为了成为独当一面的前端工程师！
 description:
 author: MOxFIVE
 language:
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://MOxFIVE.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -28,7 +28,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day.:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab

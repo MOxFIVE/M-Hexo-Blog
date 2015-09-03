@@ -1,3 +1,7 @@
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", "arial","Helvetica","Hiragino Sans GB","宋体","Tahoma","STHeiti"
+}
+
 .body-wrap{
   margin-bottom: 80px;
 }
@@ -134,27 +138,31 @@
   margin: -30px 0 20px 30px;
 }
 .article-entry{
-  line-height: 1.8em;
-  padding-right: 30px;
-  padding-left: 30px;
+  line-height: 1.65em;
+  padding:0 2em;
   p{
-    margin-top: 10px;
+    margin-top: 0.2em;
+    font-size: 1em;
   }
-  p code,li code{
+  li{
+    margin: 0.1em
+    font-size: 1.1em;
+  }
+/*  p code,li code{
     padding: 1px 3px;
     margin: 0 3px;
     background: #ddd;
     border: 1px solid #ccc;
     font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
     word-wrap: break-word;
-    font-size: 14px;
-  }
+    font-size: 1em;
+  }*/
   blockquote {
     background: #ddd;
     border-left: 5px solid #ccc;
-    padding: 15px 20px;
+    padding: 1px 20px;
     margin-top: 10px;
-    border-left: 5px solid #657b83;
+    border-left: 4px solid #dddddd;
     background: #f6f6f6;
     p{
       margin-top: 0;
@@ -166,8 +174,8 @@
   ul{
     li:before{
       content: "";
-      width: 6px;
-      height: 6px;
+      width: 5px;
+      height: 5px;
       border: 1px solid #999;
       border-radius: 10px;
       background: #aaa;
@@ -178,7 +186,7 @@
     }
   }
   ul,ol{
-    font-size: 14px;
+    font-size: 0.9em;
     margin: 10px 0px;  
   }
   li{
@@ -190,19 +198,23 @@
       }
     }
   }
+/*  h1, h2, h3 {
+    border-left: 5px solid #88acdb
+    padding-left: 0.5em
+  }*/
   h1{
     margin-top: 30px;
   }
   h2{
     margin-top: 20px;
-    font-weight: 300;
+    font-weight: bold;
     color: #574C4C;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
   }
   h3,h4,h5,h6{
     margin-top: 20px;
-    font-weight: 300;
+    font-weight: bold;
     color: #574C4C;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
@@ -227,7 +239,7 @@
     border-top: 1px solid #DDD;
     border-bottom: 1px solid #FFF;
   }
-  pre {
+/*  pre {
     font-size: 1 / 0.9em;
     line-height: 1.5;
     margin-top: 10px;
@@ -237,11 +249,11 @@
     font-size: 10px;
     border: 1px solid #ccc;
     text-shadow: 0 1px #444;
-    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
-    code{
+    /*font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;*/
+/*    code{
       font-size: 14px;
     }
-  }
+  }*/
   table{
     width:100%;
     border: 1px solid #dedede;
@@ -375,7 +387,7 @@
   border-radius: 2.8%;
   margin-left: 1em;
   padding: 0.5em;
-  max-width: 28%
+  max-width: 28%;
 }
 .toc-title {
 
@@ -391,6 +403,7 @@
 }
 #toc .toc li {
     list-style-type: none
+    background: #eee;
 }
 #toc ol {
     margin-left: 0

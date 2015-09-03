@@ -14,11 +14,13 @@ highlight-purple = #cc99cc
 
 $code-block
   background: highlight-background
-  margin: 0 article-padding * -1
-  padding: 15px article-padding
+  /*margin: 0 article-padding * -1*/
+  margin: auto
+  padding: 0.5em article-padding
   border-style: solid
   border-color: color-border
   border-width: 1px 0
+  border-radius: 5px
   overflow: auto
   color: highlight-foreground
   line-height: font-size * line-height
@@ -29,11 +31,15 @@ $line-numbers
 
 .article-entry
   pre, code
-    font-family: font-mono
+    font-family: "Microsoft YaHei", Inconsolata, Menlo, Monaco, "Hiragino Sans GB ", "SimHei" arial;
+    font-size: 1em
+    
   code
     background: color-background
     text-shadow: 0 1px #fff
     padding: 0 0.3em
+    border-radius: 3px
+    border: 1px solid #ccc;
   pre
     @extend $code-block
     code

@@ -450,7 +450,8 @@ body {
   top: 47%;
 }
 
-/*Set reference's (ol id="reference") in all [post].md*/
-#reference li:nth-child(2n-1){
+/*When reference list is the last order list of the article, 
+  line color will be interlaced.*/
+.article-entry > ol:last-child > li:nth-child(2n){
   background: #F9FFF4;
 }

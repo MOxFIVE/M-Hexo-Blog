@@ -218,6 +218,9 @@ body {
     color: #574C4C;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
+    &:hover {
+      color:#88acdb;
+    };
   }
   video{
     max-width: 100%;
@@ -382,32 +385,50 @@ body {
 
 /*toc*/
 #tocButton {
-  background: lightblue;
-  padding: 0.3em;
-  font-size: 0.8em;
-  opacity: 0.5;
-  padding: 0.3em 0.5em;
-  border-radius: 6px;
-  border-style : outset;
+  position: fixed;
+  left: 220px;
+  top: 385px;
+  background: white;
+  font-size: .9em;
+  font-weight: bold;
+  color: lightgray;
   cursor: pointer
+  border: none;
+  font-family: inherit;
+  &:hover {
+    color: #88acdb;
+    font-size: 1em;
+  }
 }
 
 .toc-article {
-  background: #eee;
+  position: fixed;
+  left: 0;
+  background: #fff;
   border-radius: 2.8%;
-  margin-left: 1em;
-  padding: 0.5em;
-  max-width: 28%;
-  max-height: 28em;
+  margin-left: 0em;
+  padding: 10px;
+  padding-left: 50px
+  width: 230px;
+  top:375px;
+  bottom: 1em;
   overflow: auto;
 }
 .toc-title {
-
 }
 #toc {
   line-height: 1.5em;
   font-size: .9em;
   float: right;
+  a {
+    color: gray;
+    &:visited {
+      color: #88acdb
+    } 
+  }
+  a:hover {
+    color: #88acdb;
+  }
 }
 
 #toc .toc {
@@ -415,7 +436,6 @@ body {
 }
 #toc .toc li {
     list-style-type: none
-    background: #eee;
 }
 #toc ol {
     margin-left: 0

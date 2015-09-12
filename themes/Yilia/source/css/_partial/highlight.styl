@@ -20,7 +20,6 @@ $code-block
   border-style: solid
   border-color: color-border
   border-width: 1px 0
-  border-radius: 5px
   overflow: auto
   color: highlight-foreground
   line-height: font-size * line-height
@@ -48,6 +47,7 @@ $line-numbers
       padding: 0
   .highlight
     @extend $code-block
+    border-radius: 5px
     pre
       border: none
       margin: 0

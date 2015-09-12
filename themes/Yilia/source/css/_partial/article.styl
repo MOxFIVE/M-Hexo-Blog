@@ -126,6 +126,16 @@ body {
   };
 }
 
+.article-info {
+  li:hover {
+    background: none;
+  }
+  a:hover {
+    font-weight: bold;
+  }  
+} 
+
+
 .article-info.info-on-archive{
   margin: 10px 0 0 0;
   float: left;
@@ -139,6 +149,7 @@ body {
   padding: 0
   border: none;
   margin: -30px 0 20px 30px;
+
 }
 .article-entry{
   line-height: 1.65em;
@@ -203,11 +214,15 @@ body {
   h2{
     margin: .5em auto;
     font-weight: bold;
-    color: #574C4C;
+    color: #9c9;
     padding-bottom: 5px;
     border-bottom: 1px solid #ddd;
     &:hover {
       color:#88acdb;
+    };
+    text-align: center;
+    &::before, &::after {
+    content:" —— ";
     };
   }
   h3 {

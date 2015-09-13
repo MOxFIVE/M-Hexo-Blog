@@ -350,8 +350,8 @@ body {
 #article-nav {
   display: table;
   width: 100%;
-  height: 3em;
-  margin: 1.5em auto;
+  height: 2.5em;
+  margin: 1em auto;
   background: #88acdb;
 }
 
@@ -441,19 +441,30 @@ body {
     color: #88acdb;
     text-decoration: none;
   }
+  li:hover {
+    background: none;
+  }
+  li li:hover {
+    background: #F0F0F0;
+  }
 }
 
 #toc .toc {
-    padding: 0
+  padding: 0
 }
 #toc .toc li {
-    list-style-type: none
+  list-style-type: none
 }
 #toc ol {
-    margin-left: 0
+  margin-left: 0
 }
 #toc .toc-child {
-    padding-left: 1.25em
+  padding-left: 1.25em;
+  margin: 4px 0;
+
+}
+.toc-link:hover {
+  background: #F0F0F0;
 }
 
 .scrolling-button {

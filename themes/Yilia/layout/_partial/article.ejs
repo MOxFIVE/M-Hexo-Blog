@@ -33,7 +33,7 @@
             <%- toc(post.content) %>
           </div>
 
-          <input type="button" id="tocButton" value="目录开关" title="点击按钮隐藏或者显示文章目录">
+          <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
           <script type="text/javascript">
           var toc_button= document.getElementById("tocButton");
           var toc_div= document.getElementById("toc");
@@ -42,9 +42,11 @@
           toc_button.onclick=function(){
             if(toc_div.style.display=="none"){
               toc_div.style.display="block";
+              toc_button.value="隐藏目录";
             }
             else{
               toc_div.style.display="none";
+              toc_button.value="显示目录";
             }
           }
           </script>

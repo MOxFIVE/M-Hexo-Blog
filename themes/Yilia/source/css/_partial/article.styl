@@ -525,3 +525,14 @@ li:hover {
     opacity: 1; 
   }
 }
+
+#intro {
+  display: inline;
+  font-weight: normal;
+  font-size: inherit;
+  opacity: 0;
+  color: white;
+  &::before, &::after {
+  content: none;
+  };
+}

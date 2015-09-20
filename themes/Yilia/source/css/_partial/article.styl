@@ -22,6 +22,7 @@ body {
   }
   img{
     max-width: 100%;
+    margin: .5em auto;
   }
 }
 @-webkit-keyframes cd-bounce-1 {
@@ -268,11 +269,18 @@ body {
   }
   table{
     width:100%;
+    max-width: 65em;
     border: 1px solid #dedede;
-    margin: 15px 0;
+    margin: 15px auto;
     border-collapse:collapse;
     tr,td{
       height:35px;
+    }
+    th {
+      font-weight: bold;
+      text-align: center;
+      background: #efefef;
+      white-space: nowrap;
     }
     thead{
       tr {
@@ -287,6 +295,12 @@ body {
     td,th{
       border: 1px solid #dedede;
       padding: 0 10px;
+    }
+    tr:nth-child(2n) {
+      background: #f8f8f8;
+    }
+    td:nth-child(-n+3){
+      white-space: nowrap;
     }
   }
   figure{

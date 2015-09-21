@@ -5,5 +5,8 @@ categories:
 tags:
 - 
 updated: 
+toc:
+author:
+original:
 permalink: 
 ---

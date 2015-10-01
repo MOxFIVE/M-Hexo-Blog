@@ -78,7 +78,7 @@
 }
 .header-author{
 	text-align: center;
-	margin: 0.67em 0;
+	margin: 13px 0;
 	font-family: Roboto, "Roboto", serif;
 	font-size: 30px;
 	transition: 0.3s;
@@ -137,12 +137,13 @@
 		-webkit-box-orient: vertical;
 	}
 	.header-menu{
-		font-weight: 300;
-		line-height: 31px;
+		font-weight: 550;
+		line-height: 28px;
+		font-family: inherit;
 		cursor: pointer;
 		text-transform: uppercase;
 		float:none;
-		height: 150px;
+		height: 140px;
 		margin-left: -12px;
 		text-align: center;
 		display: -webkit-box;
@@ -312,4 +313,30 @@
 
 #disqus_thread{
 	padding: 0 40px;
+}
+
+.search {
+	display: none;
+	margin-top: 1px;
+	font-family: inherit;
+	border: 2px solid lightgray;
+	border-radius: 2px;
+	width: 68%;
+	opacity: .4;
+	height: 18px;
+	&:hover {
+		opacity: 1;
+	};
+}
+
+.inner:hover {
+	.search {
+		display: inline;
+	};
+	.switch-btn {
+		margin-top: 0px;
+	}
+	#toc {
+		padding-top: 0px;
+	}
 }

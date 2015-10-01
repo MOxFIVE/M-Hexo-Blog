@@ -12,11 +12,10 @@
 		<hgroup>
 		  <h1 class="header-author"><a href="/" title="回到主页"><%=theme.author%></a></h1>
 		</hgroup>
-
 		<% if (theme.subtitle){ %>
 		<p class="header-subtitle"><%=theme.subtitle%></p>
 		<%}%>
-
+	  	<form><input type="text" id="ts-search-input" class="search" placeholder=" Search…"></form>
 		<%if(theme.tagcloud){%>
 			<div class="switch-btn">
 				<div class="icon">
@@ -58,7 +57,6 @@
 				</div>
 			</div>
 		<%}%>
-
 		<div class="switch-area">
 			<div class="switch-wrap">
 				<section class="switch-part switch-part1">
@@ -107,5 +105,5 @@
 				<%}%>
 			</div>
 		</div>
-	</header>				
+	</header>			
 </div>

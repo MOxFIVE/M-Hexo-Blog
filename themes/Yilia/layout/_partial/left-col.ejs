@@ -15,7 +15,9 @@
 		<% if (theme.subtitle){ %>
 		<p class="header-subtitle"><%=theme.subtitle%></p>
 		<%}%>
-	  	<input type="text" class="st-default-search-input" id="search" placeholder=" Search...">
+		<form>
+	  	<input type="text" id="bdcsMain" class="search" placeholder=" Search..."></form>
+	  	<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=18240140946075612580' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
 		<%if(theme.tagcloud){%>
 			<div class="switch-btn">
 				<div class="icon">

@@ -8,16 +8,17 @@ menu:
 
 # SubNav
 subnav:
-  github: https://github.com/MOxFIVE
-  weibo: http://weibo.com/yemzh
-  #rss: "#"
-  #zhihu: "#"
-  #douban: "#"
-  mail: "mailto:&#0000109;&#0000111;&#x0000031;&#0048;&#x0000030;&#0048;&#000053;&#000064;&#00000111;&#0117;&#00116;&#x000006c;&#0111;&#111;&#00107;&#x002e;&#x00063;&#00000111;&#00109;"
-  #facebook: "#"
-  #google: "#"
-  #twitter: "#"
-  #linkedin: "#"
+  GitHub: https://github.com/MOxFIVE
+  新浪微博: http://weibo.com/yemzh
+  邮件: "mailto:&#0000109;&#0000111;&#x0000031;&#0048;&#x0000030;&#0048;&#000053;&#000064;&#00000111;&#0117;&#00116;&#x000006c;&#0111;&#111;&#00107;&#x002e;&#x00063;&#00000111;&#00109;"
+  V2EX: https://www.v2ex.com/member/MOxFIVE
+  #Facebook: "#"
+  #Google: "#"
+  #Twitter: "#"
+  #Linkedin: "#"
+  #RSS订阅: "#"
+  #知乎: "#"
+  #豆瓣: "#"
 
 rss: /atom.xml
 

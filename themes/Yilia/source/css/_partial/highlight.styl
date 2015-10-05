@@ -34,11 +34,11 @@ $line-numbers
     font-size: 1em
     
   code
-    background: color-background
-    text-shadow: 0 1px #fff
+    color: gray
+    background: rgba(248, 237, 223, .6)
     padding: 0 0.3em
-    border-radius: 3px
-    border: 1px solid #ccc;
+    border-radius: 5px
+
   pre
     @extend $code-block
     code
@@ -48,6 +48,10 @@ $line-numbers
   .highlight
     @extend $code-block
     border-radius: 5px
+    max-height: 50em
+    margin-top: .5em
+    margin-bottom: 1em
+    overflow: auto
     pre
       border: none
       margin: 0

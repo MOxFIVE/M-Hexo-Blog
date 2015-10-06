@@ -481,34 +481,6 @@ body {
   background: #F0F0F0;
 }
 
-.scrolling-button {
-  display:block;
-  padding:0.05em;
-  border-radius:0.15em;
-  width:1.1em;
-  height:1.4em;
-  line-height:1.3em;
-  font-size:1.5em;
-  font-family: Calibri;
-  text-align: center;
-  background:rgba(215, 216, 215, .1); 
-  position: fixed;
-  cursor: pointer;
-  color: #fff;
-  right: 1px;
-  &:hover {
-    background:rgba(215, 216, 215, 1); 
-  };
-}
-
-#toTop {
-  top: 41%;
-}
-
-#toBottom {
-  top: 47%;
-}
-
 /*When reference list is the last order list of the article, 
   line color will be interlaced.*/
 .article-entry > ol:last-child {
@@ -611,14 +583,11 @@ li:hover {
 #tocButton {
   background: none;
 }
-/*.article-entry .highlight {
+.article-entry .highlight {
   background: none;
-}*/
+}
 .article-entry > ol:last-child > li:nth-child(2n) {
     background: rgba(158, 188, 226, .12);
-    &:hover {
-      background: ;
-    };
   };
  .article-entry h3 {
     background: rgba(243, 248, 253, .6)

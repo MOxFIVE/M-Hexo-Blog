@@ -10,7 +10,7 @@ span.ua {
     border: 1px solid #BBB!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_other {
     background-color: #bdb2a7!important;
@@ -18,7 +18,7 @@ span.ua {
     border: 1px solid #BBB!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_other {
     opacity: 1;
@@ -31,7 +31,7 @@ span.ua {
     border-color: #357ebd!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_ie:hover {
     opacity: 1;
@@ -41,7 +41,7 @@ span.ua {
     border-color: #eea236!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_firefox:hover {
     opacity: 1;
@@ -51,7 +51,7 @@ span.ua {
     border-color: #7373B9!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_maxthon:hover {
     opacity: 1;
@@ -61,7 +61,7 @@ span.ua {
     border-color: #d43f3a!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_ucweb:hover {
     opacity: 1;
@@ -71,7 +71,7 @@ span.ua {
     border-color: #4cae4c!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_sogou:hover {
     opacity: 1;
@@ -81,7 +81,7 @@ span.ua {
     border-color: #4cae4c!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_2345explorer:hover {
     opacity: 1;
@@ -91,7 +91,7 @@ span.ua {
     border-color: #4cae4c!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_2345chrome:hover {
     opacity: 1;
@@ -101,7 +101,7 @@ span.ua {
     border-color: #4cae4c!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_mi:hover {
     opacity: 1;
@@ -111,7 +111,7 @@ span.ua {
     border-color: #4cae4c!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_lbbrowser:hover {
     opacity: 1;
@@ -121,7 +121,7 @@ span.ua {
     border-color: #4cae4c!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_chrome:hover {
     opacity: 1;
@@ -131,7 +131,7 @@ span.ua {
     border-color: #4cae4c!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_qq:hover {
     opacity: 1;
@@ -141,7 +141,7 @@ span.ua {
     border-color: #4cae4c!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_apple:hover {
     opacity: 1;
@@ -151,7 +151,7 @@ span.ua {
     border-color: #d43f3a!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .ua_opera:hover {
     opacity: 1;
@@ -161,7 +161,7 @@ span.ua {
     border-color: #46b8da!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .os_vista,.os_2000,.os_windows,.os_xp,.os_7,.os_8,.os_8_1:hover {
     opacity: 1;
@@ -171,7 +171,7 @@ span.ua {
     border-color: #01B171!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .os_android:hover {
     opacity: 1;
@@ -181,7 +181,7 @@ span.ua {
     border-color: #01B171!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .os_ubuntu:hover {
     opacity: 1;
@@ -191,7 +191,7 @@ span.ua {
     border-color: #1F1F1F!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .os_linux:hover {
     opacity: 1;
@@ -201,7 +201,7 @@ span.ua {
     border-color: #1F1F1F!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .os_mac:hover {
     opacity: 1;
@@ -211,7 +211,7 @@ span.ua {
     border-color: #1F1F1F!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .os_unix:hover {
     opacity: 1;
@@ -221,7 +221,7 @@ span.ua {
     border-color: #1F1F1F!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .os_nokia:hover {
     opacity: 1;
@@ -234,7 +234,7 @@ span.ua {
     border-color: #01B171!important;
     border-radius: 4px;
     padding: 0 5px!important;
-    opacity: .6;
+    opacity: .4;
 }
 .sskadmin:hover {
     opacity: 1;
@@ -281,12 +281,19 @@ span.ua {
     -moz-transform: rotateZ(360deg);   
 }
 
-/*喜欢按钮透明度*/
+/*喜欢按钮样式*/
 .ds-meta {
     opacity: .5;
 }
 .ds-meta:hover {
     opacity: 1;
+    }
+#ds-thread #ds-reset a.ds-like-thread-button {
+    background-image: none;
+    background-color: #fee2d3;
+    border: none;
+    text-shadow: none;
+    font-family: inherit;
     }
 
 /*社交账号登陆透明度*/
@@ -301,6 +308,7 @@ span.ua {
 #ds-thread #ds-reset .ds-comment-body p, #ds-thread #ds-reset .ds-textarea-wrapper textarea {
     font-size: 1.15em;
     color: #717171;
+    font-family: inherit;
 }
 
 /*用户名等超链接颜色*/
@@ -313,6 +321,34 @@ span.ua {
     color: #ef7c6c !important;
 }
 
-/*评论框背景图片*/
+/*输入框背景*/
 #ds-thread #ds-reset .ds-textarea-wrapper textarea {
-background: url("http://moxfive.xyz/resources/Mihawk-s.png") bottom right no-repeat;}
+    background: url("/resources/Mihawk-s.png") bottom right no-repeat;
+    
+}
+
+/*评论框背景*/
+#ds-thread #ds-reset .ds-textarea-wrapper {
+    background: rgba(255, 255, 255, .5);
+}
+
+/*工具栏背景*/
+#ds-reset .ds-gradient-bg {
+    background: rgba(255, 255, 255, .5);
+}
+/*"发布"按钮背景*/
+#ds-thread #ds-reset .ds-post-button {
+    background-image: none;
+    background: rgba(255, 255, 255, .5);
+}
+/*评论列表背景*/
+#ds-thread #ds-reset li.ds-post {
+    background: rgba(255, 255, 255, .2);
+}
+#ds-thread #ds-reset li.ds-post:hover {
+    background-color: rgba(255, 255, 255, .6) !important;
+}
+/*评论数标签*/
+#ds-thread #ds-reset li.ds-tab a.ds-current {
+    background: rgba(255, 255, 255, .2);
+}

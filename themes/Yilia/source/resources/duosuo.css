@@ -227,7 +227,6 @@ span.ua {
     opacity: 1;
 }
 /*UA End*/
-
 /*博主标记*/
 .sskadmin {
     background-color: #00a67c!important;
@@ -239,16 +238,12 @@ span.ua {
 .sskadmin:hover {
     opacity: 1;
 }
-
-
 /*头像样式*/
 #ds-reset .ds-avatar{background:none !important; box-shadow:none !important;}
 #ds-reset .ds-avatar img , #ds-thread #ds-reset ul.ds-children .ds-avatar img{width:50px !important;height: 50px !important;-webkit-transition: .9s;-moz-transition: .9s;-o-transition: .9s;-ms-transition: .9s;padding: 2px;border: 1px solid #ddd;background: #fff;}
-
 /*鼠标悬停旋转头像*/
 .ds-post:hover .ds-avatar img{transform:rotate(360deg);-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);border-radius:30px !important;}
 #ds-reset .ds-avatar img:hover{transform:rotate(360deg);-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);border-radius:30px !important;}
-
 /*通用样式*/
 #ds-thread #ds-reset .ds-comment-body, #ds-thread #ds-reset ul.ds-children .ds-comment-body{padding-left:70px !important;}
 #ds-thread #ds-reset .ds-comment-body, #ds-thread #ds-reset ul.ds-children .ds-comment-body{padding-left:70px !important;}
@@ -280,7 +275,6 @@ span.ua {
     -webkit-transform: rotateZ(360deg);   
     -moz-transform: rotateZ(360deg);   
 }
-
 /*喜欢按钮样式*/
 .ds-meta {
     opacity: .5;
@@ -303,35 +297,29 @@ span.ua {
 #ds-thread #ds-reset .ds-login-buttons:hover {
     opacity: 1 !important;
 }
-
 /*评论、文本框字体*/
 #ds-thread #ds-reset .ds-comment-body p, #ds-thread #ds-reset .ds-textarea-wrapper textarea {
     font-size: 1.15em;
     color: #717171;
     font-family: inherit;
 }
-
 /*用户名等超链接颜色*/
 #ds-thread #ds-reset .ds-highlight {
     color: #ef7c6c !important;
 }
-
 /*未登录用户名字颜色*/
 #ds-thread #ds-reset .ds-user-name {
     color: #ef7c6c !important;
 }
-
 /*输入框背景*/
 #ds-thread #ds-reset .ds-textarea-wrapper textarea {
     background: url("/resources/Mihawk-s.png") bottom right no-repeat;
     
 }
-
 /*评论框背景*/
 #ds-thread #ds-reset .ds-textarea-wrapper {
     background: rgba(255, 255, 255, .5);
 }
-
 /*工具栏背景*/
 #ds-reset .ds-gradient-bg {
     background: rgba(255, 255, 255, .5);
@@ -339,14 +327,15 @@ span.ua {
 /*"发布"按钮背景*/
 #ds-thread #ds-reset .ds-post-button {
     background-image: none;
-    background: rgba(255, 255, 255, .5);
+    background: rgba(136, 172, 219, .6);
+    text-shadow: none;
 }
 /*评论列表背景*/
 #ds-thread #ds-reset li.ds-post {
     background: rgba(255, 255, 255, .2);
 }
 #ds-thread #ds-reset li.ds-post:hover {
-    background-color: rgba(255, 255, 255, .6) !important;
+    background-color: rgba(255, 255, 255, .5) !important;
 }
 /*评论数标签*/
 #ds-thread #ds-reset li.ds-tab a.ds-current {

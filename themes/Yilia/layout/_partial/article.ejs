@@ -84,3 +84,19 @@
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </section>
 <% } %>
+
+<% if (!index && post.comments){ %>
+    <style type="text/css">
+    #scroll {
+      display: none;
+    }
+    .scroll .fa-arrow-up {
+    border-bottom: none;
+    }
+    </style>
+    <ul class="scroll">
+    <li><a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a></li>
+    <li><a href="#ds-thread" title="查看评论"><i class="fa fa-comments-o"></i></a></li>
+    <li><a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a></li>
+    </ul>
+<% } %>

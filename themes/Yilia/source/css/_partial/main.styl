@@ -340,32 +340,6 @@
 	};
 }
 
-.scrolling-button {
-  display:block;
-  padding:0.05em;
-  border-radius:0.15em;
-  width:1.1em;
-  height:1.4em;
-  line-height:1.3em;
-  font-size:1.5em;
-  font-family: Calibri;
-  text-align: center;
-  background:rgba(215, 216, 215, .4); 
-  position: fixed;
-  cursor: pointer;
-  color: #fff;
-  right: 1px;
-  &:hover {
-    background:rgba(215, 216, 215, .9); 
-  };
-}
-#toTop {
-  top: 41%;
-}
-#toBottom {
-  top: 47%;
-}
-
 /*MOxFIVE's color schemes*/
 body {
 
@@ -388,4 +362,35 @@ body {
 
 #header .profilepic {
 
+}
+
+.scroll {
+	z-index: 999;
+	position: fixed;
+	top: 61.8%;
+	right: 0px;
+	text-align: center;
+	li {
+		width: 29px;
+		font-size: 28px;
+		background: rgba(215, 216, 215, .4);
+	}
+	.fa-comments-o {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+	}
+	.fa-arrow-up {
+		border-bottom: 1px solid white;
+	}
+	.fa {
+		color: rgba(255, 255, 255, .8);
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+	li:hover {
+		background: rgba(147, 181, 224, .3); 
+		.fa {
+		color: white;
+		}
+	}
 }

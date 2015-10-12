@@ -30,6 +30,9 @@
         <% } %>
         <%- post.content %>
       <% } %>
+      <% if (post.page === "tags"){ %>
+        <%- partial('_partial/page-tags') %>
+      <% } %>
     </div>
 
     <% if (index){ %>

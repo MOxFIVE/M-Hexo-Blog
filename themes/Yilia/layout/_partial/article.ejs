@@ -24,17 +24,12 @@
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
       <% } else { %>
-        <!-- Table of Contents -->
-        <% if (!index && post.toc != false){ %>
-            <%- partial('_partial/toc') %>
-        <% } %>
         <%- post.content %>
       <% } %>
-      <% if (post.page === "tags"){ %>
+      <% if (page.path === "tags/index.html"){ %>
         <%- partial('_partial/page-tags') %>
       <% } %>
     </div>
-
     <% if (index){ %>
     <div class="article-info article-info-index">
       <%if(post.top){%>
@@ -57,17 +52,19 @@
     <%- partial('post/nav') %>
   <% } %>
 </article>
-
+<% if (!index && post.toc != false){ %>
+<%- partial('_partial/toc') %>
+<% } %>
 <% if (!index && theme.share){ %>
 <%- partial('post/share') %>
 <% } %>
 
 <% if (!index && theme.duoshuo && post.comments){ %>
-<%- partial('post/duoshuo', {
-    key: post.path,
-    title: post.title,
-    url: config.url+url_for(post.path)
-  }) %>
+  <%- partial('post/duoshuo', {
+      key: post.path,
+      title: post.title,
+      url: config.url+url_for(post.path)
+    }) %>
 <% } %>
 
 <% if (!index && post.comments && config.disqus_shortname){ %>
@@ -93,9 +90,6 @@
     #scroll {
       display: none;
     }
-    .scroll .fa-arrow-up {
-    border-bottom: none;
-    }
     </style>
     <div class="scroll">
     <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
@@ -103,33 +97,4 @@
     <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
     </div>
 <% } %>
-
-
-<% if (is_post()){ %>
-  <% if (post.prev && !post.next){ %>
-    <div  class="post-nav-button">
-    <a href="<%- url_for(post.prev.path) %>" title="上一篇: <%= post.prev.title %>">
-    <i class="fa fa-angle-left"></i>
-    </a>
-    <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
-    </div>
-  <% } %>
-  <% if (!post.prev && post.next){ %>
-    <div  class="post-nav-button">
-    <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
-    <a href="<%- url_for(post.next.path) %>" title="下一篇: <%= post.next.title %>">
-    <i class="fa fa-angle-right"></i>
-    </a>
-    </div>
-  <% } %>
-    <% if (post.prev && post.next){ %>
-    <div  class="post-nav-button">
-    <a href="<%- url_for(post.prev.path) %>" title="上一篇: <%= post.prev.title %>">
-    <i class="fa fa-angle-left"></i>
-    </a>
-    <a href="<%- url_for(post.next.path) %>" title="下一篇: <%= post.next.title %>">
-    <i class="fa fa-angle-right"></i>
-    </a>
-    </div>
-  <% } %>
-<% } %>
+<%- partial('_partial/post-nav-button') %>

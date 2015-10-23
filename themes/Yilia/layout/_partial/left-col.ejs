@@ -10,14 +10,16 @@
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/" title="回到主页"><%=theme.author%></a></h1>
+		  <h1 class="header-author"><a href="/"><%=theme.author%></a></h1>
 		</hgroup>
+
 		<% if (theme.subtitle){ %>
 		<p class="header-subtitle"><%=theme.subtitle%></p>
 		<%}%>
-		<form>
-	  	<input type="text" id="bdcsMain" class="search" placeholder=" Search..."></form>
-	  	<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=18240140946075612580' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+		<% if (theme.search_box){ %>
+		<form><input type="text" id="bdcsMain" class="search" placeholder=" Search..."></form>
+		<%- partial('baidu-search') %>
+		<%}%>		
 		<%if(theme.tagcloud){%>
 			<div id="switch-btn" class="switch-btn">
 				<div class="icon">
@@ -59,6 +61,7 @@
 				</div>
 			</div>
 		<%}%>
+
 		<div id="switch-area" class="switch-area">
 			<div class="switch-wrap">
 				<section class="switch-part switch-part1">
@@ -70,11 +73,11 @@
 						</ul>
 					</nav>
 					<nav class="header-nav">
-						<div class="social">
+						<ul class="social">
 							<% for (var i in theme.subnav){ %>
-								<a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"><%= i %></a>
+								<li id="<%= i %>"><a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"></a></li>
 					        <%}%>
-						</div>
+						</ul>
 					</nav>
 				</section>
 				
@@ -107,5 +110,5 @@
 				<%}%>
 			</div>
 		</div>
-	</header>			
+	</header>				
 </div>

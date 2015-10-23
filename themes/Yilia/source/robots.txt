@@ -3,8 +3,7 @@ Disallow: /resources
 Disallow: /404
 Disallow: /404/index.html
 Disallow: /about/index.html
-Disallow: /categories
-Disallow: /tags
+Disallow: /background
 Sitemap: /sitemap.xml
 Disallow: /css
 Disallow: /fancybox

@@ -10,3 +10,6 @@
 > - 采用[Hexo](https://hexo.io/)框架搭建；
 > - 使用国人litten的简洁主题：[Yilia](https://github.com/litten/hexo-theme-yilia)；
 > - 主题按个人需要的进行修改。
+
+### [Hexo-Theme-Yelee](https://github.com/MOxFIVE/hexo-theme-yelee)
+> 简而不减 Hexo 双栏博客主题 Another simple and elegant theme for Hexo. 

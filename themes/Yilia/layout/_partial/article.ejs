@@ -24,6 +24,9 @@
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
       <% } else { %>
+          <% if (is_page()){ %>
+             <%- partial('_partial/page') %>
+          <% } %>
         <%- post.content %>
       <% } %>
       <% if (page.path === "tags/index.html"){ %>

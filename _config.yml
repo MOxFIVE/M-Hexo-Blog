@@ -75,7 +75,7 @@ deploy:
 		gitcafe: git@gitcafe.com:MOxFIVE/MOxFIVE.git,gitcafe-pages
 
 index_generator:
-  per_page: 10
+  per_page: 15
 
 archive_generator:
   per_page: 20

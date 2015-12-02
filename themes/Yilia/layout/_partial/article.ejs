@@ -21,11 +21,15 @@
       <% } %>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
+      <% if (index && (post.description || post.excerpt)){ %>
+          <% if (post.description){ %>
+              <%- post.description %>
+          <% } else { %>
+              <%- post.excerpt %>
+          <% } %>
       <% } else { %>
           <% if (is_page()){ %>
-             <%- partial('_partial/page') %>
+              <%- partial('_partial/page') %>
           <% } %>
         <%- post.content %>
       <% } %>
@@ -39,7 +43,7 @@
       <% } %>
       <%- partial('post/category') %>
       <%- partial('post/tag') %>
-      <% if (post.excerpt && index){ %>
+      <% if (index && (post.description || post.excerpt)){ %>
         <p class="article-more-link">
           <a <% if (!theme.excerpt_link){ %>class="hidden"<% } %> href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %> >></a>
         </p>

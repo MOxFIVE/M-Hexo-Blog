@@ -496,9 +496,9 @@ li:hover {
 }
 .copyright {
   width: 85%;
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: 45em;
-  word-break: break-all;
+  word-break: break-word;
   font-size: .93em;
   line-height: 1.6em;
   padding: .5em 1.8em;
@@ -516,5 +516,18 @@ li:hover {
       color: #a3d2a3;
       text-decoration: underline;
     };
+  }
+  &:hover p .copy-path::after {
+    content: "复制";
+  }
+  .post-url:hover {
+    font-weight: normal;
+  }
+  .copy-path {
+    margin-left: 1em;
+    &:hover {
+      color: gray;
+      cursor: pointer;
+    }
   }
 }

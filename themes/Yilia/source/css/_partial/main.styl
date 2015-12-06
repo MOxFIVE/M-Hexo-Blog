@@ -176,9 +176,10 @@
 		position: absolute;
 		transition: transform .3s ease-in;
 		.social {
-			margin-right:11px;
+			margin-right: 9px;
 			margin-top:10px;
 			text-align: center;
+			font-family: sans-serif
 			li {
 				display: inline-block;
 				width: 37px;
@@ -190,12 +191,15 @@
 				opacity: .58;
 				text-align: center;
 				a {
-					line-height: 37px;
+					line-height: 39px;
 					color: white;
 				}
 				&:hover {
-					font-size: 24px;
+					font-size: 23px;
 					opacity: 1;
+				}
+				&:nth-child(5n) {
+					margin-right: 0;
 				}
 			}
 			#新浪微博 {

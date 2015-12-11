@@ -1,8 +1,9 @@
 ﻿/*More info: http://moxfive.xyz/2015/09/29/duosuo-style*/
 /*UA Start*/
 span.ua {
-    margin: 0 1px!important;
-    color: #FFFFFF!important;
+    display: inline-block !important;
+    margin: auto 1px .3em !important;
+    color: #fff !important;
 }
 .os_other {
     background-color: #bdb2a7!important;
@@ -314,7 +315,6 @@ span.ua {
 /*输入框背景*/
 #ds-thread #ds-reset .ds-textarea-wrapper textarea {
     background: url("/resources/Mihawk-s.png") bottom right no-repeat;
-    
 }
 /*评论框背景*/
 #ds-thread #ds-reset .ds-textarea-wrapper {

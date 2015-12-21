@@ -384,9 +384,11 @@
     top: 61.8%;
     right: 0;
     text-align: center;
+    line-height: 42px;
     a {
         display: block;
         width: 29px;
+        height: 42px;
         font-size: 28px;
         background: rgba(215, 216, 215, .4);
         border-bottom: 1px solid white;
@@ -396,8 +398,6 @@
     }
     .fa {
         color: rgba(255, 255, 255, .8);
-        padding-top: 6px;
-        padding-bottom: 6px;
     }
     a:hover {
         background: rgba(147, 181, 224, .3); 
@@ -434,14 +434,21 @@
     left: 300px;
     top: 61.8%;
     text-align: center;
+    line-height: 42px;
     a {
         display: block;
         width: 29px;
+        height: 42px;
         font-size: 28px;
+        .fa-times {
+            display: none;
+        }
+        border-bottom: 1px solid transparent;
+        &:last-child {
+            border-bottom: none;
+        }
     }
     .fa {
-        padding-top: 6px;
-        padding-bottom: 6px;
         color: rgba(255, 255, 255, .8);
     }
     a:hover {

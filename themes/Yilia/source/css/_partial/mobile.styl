@@ -51,8 +51,9 @@
         margin-bottom: 10px;
     }
 }
-.header-subtitle{
-    padding: 0 24px;
+#header .header-subtitle{
+    padding: 0 3em;
+    font-size: 1em;
 }
 
 .article-info-index.article-info{
@@ -91,24 +92,10 @@
     }
     .article-meta{
         width: auto;
-        height: 30px;
-        margin-top: -5px;
-        position: ralative;
-        .article-date{
-            font-size: 12px;
-            border-radius: 0;
-            color: #666;
-            background: none;
-            height: auto;
-            padding: 0;
+        .article-date {
             margin: 0;
-            width: 100%;
-            text-align: left;
-            margin-left: 10px;
-            time{
-                width: auto;
-                float: right;
-                margin-right: 10px;
+            time {
+                padding-right: .5em;
             }
         }
         .article-tag-list{
@@ -147,10 +134,6 @@
     }
 }
 
-.article-meta {
-  padding: 12px;
-
-}
 .article-inner {
   padding: 12px;
 }
@@ -174,6 +157,13 @@
     opacity: 1;
 }
 
+#page-nav {
+    margin-top: 1em;
+    .page-number {
+        margin-bottom: 1.5em;
+    }
+}
+
 .instagram .open-ins{
     left: 2px;
     top: -30px;
@@ -185,9 +175,6 @@
 .archives-wrap{
     margin: 10px 10px 0px;
     padding: 10px;
-    .archive-article-title{
-        font-size: 14px;
-    }
     .archive-year-wrap{
         position: relative;
         padding: 0 0 0 0;
@@ -195,15 +182,9 @@
             padding: 0 0 0 0;
         }
     }
-    .article-meta{
-        .archive-article-date{
-            font-size: 12px;
-            margin-right: 10px;
-            margin-top: -5px;
-        }
-        .article-tag-list-link{
-            font-size: 12px;
-        }
+    h1 {
+        font-size: 1.2em;
+        margin-bottom: .3em;
     }
 }
 .archives{
@@ -216,10 +197,14 @@
 #footer {
     .footer-left{
         float: initial;
-        margin-bottom: 10px;
+        margin-bottom: .5em;
     }
     .footer-right{
         float: initial;
+        margin-bottom: 1em;
+    }
+    .visit {
+        margin: 0;
     }
 }
 

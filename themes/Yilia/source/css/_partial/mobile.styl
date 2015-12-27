@@ -314,15 +314,18 @@
 }
 
 .hide-labels {
+    z-index: 100;
     position: fixed;
-    left: 42px;
-    top: 78px;
-    color: white;
-    opacity: .6;
-    &:hover {
-        color: none;
-        opacity: 1; 
-    }
+    left: .5em;
+    top: auto; 
+    bottom: 10px;
+    padding: .2em .4em;
+    border-radius: 6px;
+    border-style : outset;
+    opacity: .9;
+    background: rgba(255, 255, 255, .8);
+    font-weight: bold;
+    color: gray;
 }
 
 #post-nav-button {

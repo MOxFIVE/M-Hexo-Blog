@@ -242,6 +242,7 @@
         opacity: 0.8;
         font-family: inherit;
         &:hover{
+            transform: scale(1.06);
             opacity: 1;
         }
         &:before{
@@ -293,6 +294,13 @@
         background: #88acdb;
         &:before{
             border-right-color:#88acdb;  
+        }
+    }
+    a:hover {
+        background-color: hover-color;
+        border-color: hover-color;
+        &::before {
+            border-right-color: hover-color;
         }
     }
 }

@@ -149,13 +149,16 @@
         -webkit-box-orient: vertical;
     }
     .header-menu{
+        menu-line-height = 28px
         font-weight: 550;
-        line-height: 28px;
+        line-height: menu-line-height;
         font-family: inherit;
         cursor: pointer;
         /*text-transform: uppercase;*/
-        float:none;
-        height: 140px;
+        float: none;
+        min-height: menu-line-height * 3px;
+        max-height: menu-line-height * 5px;
+        overflow: auto;
         margin-left: -12px;
         text-align: center;
         display: -webkit-box;

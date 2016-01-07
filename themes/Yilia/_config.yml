@@ -39,7 +39,7 @@ background_image: 5
 # Content
 excerpt_link: more
 fancybox: true
-mathjax: true
+mathjax: 0
 
 # 是否开启动画效果
 animate: true

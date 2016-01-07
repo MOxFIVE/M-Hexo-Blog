@@ -36,6 +36,22 @@
     <meta name="baidu-site-verification" content="ai9YVe01DX" />
     <meta name="google-site-verification" content="VR0pjVypb6rfBUkK2IJnVqqEXeB9-jZzXpZDiWa6Q18" />
   <% } %>
+  <% if (theme.fancybox){ %>
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <% } %>
+  <script>
+      var yiliaConfig = {
+          fancybox: <%=theme.fancybox%>,
+          mathjax: <%=theme.mathjax%>,
+          animate: <%=theme.animate%>,
+          isHome: <%=is_home()%>,
+          isPost: <%=is_post()%>,
+          isArchive: <%=is_archive()%>,
+          isTag: <%=is_tag()%>,
+          isCategory: <%=is_category()%>,
+          open_in_new: <%=theme.open_in_new%>
+      }
+  </script>    
   <script>/*Tongji*/
     var _hmt = _hmt || [];
     (function() {

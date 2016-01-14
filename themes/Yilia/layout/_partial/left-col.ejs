@@ -17,8 +17,8 @@
         <p class="header-subtitle"><%=theme.subtitle%></p>
         <%}%>
         <% if (theme.search_box){ %>
-        <form><input type="text" id="bdcsMain" class="search" placeholder=" Search..."></form>
-        <%- partial('baidu-search') %>
+            <form><input type="text" id="bdcsMain" class="search" placeholder=" Search..."></form>
+            <%- partial('_partial/baidu-search') %>
         <%}%>        
         <%if(theme.tagcloud){%>
             <div id="switch-btn" class="switch-btn">

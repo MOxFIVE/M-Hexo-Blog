@@ -74,6 +74,7 @@ friends:
   GitHub: //pages.github.com/
   Netcan: //netcanblog.sinaapp.com/
   Jackie Wu: //jackieblog.github.io/
+  Andy Zheng: //codinglife.in/
 
 #是否开启“关于我”。
 #不开启——
@@ -103,4 +104,6 @@ highlight_style:
 
 # >>> <<<
 
-
+blockquote_style:
+  #on: true
+  blockquote: 1

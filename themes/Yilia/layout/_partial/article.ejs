@@ -21,6 +21,7 @@
       <% } %>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
+      <%- partial('post/intro') %>
       <% if (index && (post.description || post.excerpt)){ %>
           <% if (post.description){ %>
               <%- post.description %>

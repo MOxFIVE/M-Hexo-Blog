@@ -108,3 +108,5 @@ highlight_style:
 blockquote_style:
   #on: true
   blockquote: 1
+
+jquery_ui: 1

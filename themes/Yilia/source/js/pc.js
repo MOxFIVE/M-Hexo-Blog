@@ -109,7 +109,7 @@
 });
 
 $(function() {
-    $(document).tooltip({
+    $("[title]").tooltip({
         show: {
             effect: 'blind',
             delay: 250,
@@ -128,6 +128,7 @@ $(function() {
             delay: 1200,
         }
     })
+    $(".ds-replybox form").off("tooltip")
     $("#post-nav-button").tooltip({
         show: {
             effect: 'clip',

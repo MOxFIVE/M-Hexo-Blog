@@ -109,6 +109,8 @@
 });
 
 $(function() {
+    if (!$().tooltip) return;
+    if (navigator.userAgent.match(/(iPhone|iPad|Android|ios|PlayBook)/i)) return;
     $("[title]").tooltip({
         show: {
             effect: 'blind',
@@ -129,16 +131,6 @@ $(function() {
         }
     })
     $(".ds-replybox form").off("tooltip");
-    $(".ds-recent-visitors").tooltip({
-        show: null,
-        position: {
-        my: "left top",
-        at: "left bottom"
-        },
-        open: function( event, ui ) {
-            ui.tooltip.animate({ top: ui.tooltip.position().top + 6 }, 300 );
-        }
-    });
     $("#post-nav-button").tooltip({
         show: {
             effect: 'clip',
@@ -158,4 +150,14 @@ $(function() {
             duration: 70,
         }
     })
+    $(".ds-recent-visitors").tooltip({
+        show: null,
+        position: {
+        my: "left top",
+        at: "left bottom"
+        },
+        open: function( event, ui ) {
+            ui.tooltip.animate({ top: ui.tooltip.position().top + 6 }, 300 );
+        }
+    });
 });

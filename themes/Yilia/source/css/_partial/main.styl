@@ -216,19 +216,20 @@
                     margin-right: 0;
                 }
             }
+            
             #新浪微博 {
                 background:url('/img/weibo.png') center no-repeat #ecc260;
             }
-            .新浪微博:before {
+            .新浪微博:before,
+            .GitHub:before,
+            .知乎:before,
+            .豆瓣:before,
+            .TiddlyWiki:before {
               content: "\f18a";
               color: transparent;
             }
             #GitHub {
                 background: url('/img/github.png') center no-repeat white;
-            }
-            .GitHub:before {
-              content: "\f113";
-              color: transparent;
             }
             #V2EX {
                 background: url('/img/v2ex.png') center no-repeat #e4cdb4;
@@ -246,16 +247,8 @@
             #知乎 {
                 background: url('/img/zhihu.png') center no-repeat #0078d8;
             }
-            .知乎:before {
-              content: "\f073";
-              color: transparent;
-            }
             #豆瓣 {
                 background: url('/img/douban.png') center no-repeat #06c611;
-            }
-            .豆瓣:before {
-              content: "\f073";
-              color: transparent;
             }
             #Google {
                 background: #c83d20;
@@ -325,10 +318,6 @@
             }
             #TiddlyWiki {
                 background: url('/img/TiddlyWiki.png') center no-repeat #6283dd;
-            }
-            .TiddlyWiki:before {
-              content: "\f073";
-              color: transparent;
             }
         }
     }

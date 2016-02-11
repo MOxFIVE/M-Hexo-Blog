@@ -248,20 +248,26 @@
         &:nth-child(5n), &:last-child
             margin-right 0
 
-    #新浪微博
-        background:url('/img/weibo.png') center no-repeat #ecc260
-    #GitHub
-        background url('/img/github.png') center no-repeat white
-    #V2EX
-        background url('/img/v2ex.png') center no-repeat #e4cdb4
+    img-logo = {
+        "新浪微博": #ecc260
+        "知乎": #0078d8
+        "豆瓣": #06c611
+        GitHub: white
+        V2EX: #e4cdb4
+        TiddlyWiki: #6283dd
+    }
+
+    for name, color in img-logo
+        .{name}:before
+            content '\f18a'
+            color transparent
+        #{name}
+            background: url('/img/' + name + '.png') center no-repeat color
+
     #RSS
         background #ef7522
     .RSS:before
         content "\f09e"
-    #知乎
-        background url('/img/zhihu.png') center no-repeat #0078d8
-    #豆瓣
-        background url('/img/douban.png') center no-repeat #06c611
     #Google
         background #c83d20
     .Google:before
@@ -306,8 +312,6 @@
         background #0365c8
     .Flickr:before
         content "\f16e"
-    #TiddlyWiki
-        background url('/img/TiddlyWiki.png') center no-repeat #6283dd
 
 .duoshuo {
     padding: 0 40px;
@@ -439,5 +443,3 @@ body .ui-tooltip
     
 #ds-recent-visitors img:hover
     transform scale(1.12)
-
-cards_colors = ( #E0137E #8431BF #2388C4 )

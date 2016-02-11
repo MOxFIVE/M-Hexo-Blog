@@ -264,54 +264,25 @@
         #{name}
             background: url('/img/' + name + '.png') center no-repeat color
 
-    #RSS
-        background #ef7522
-    .RSS:before
-        content "\f09e"
-    #Google
-        background #c83d20
-    .Google:before
-        content "\f1a0"
-    #Twitter
-        background #55cff8
-    .Twitter:before
-        content "\f099"
-    #LinkedIn
-        background #005a87
-    .LinkedIn:before
-        content "\f0e1"
-    #Email
-        background #6fc0e4
-    .Email:before
-        content "\f003"
-    #Facebook
-        background #3b5998
-    .Facebook:before
-        content "\f09a"
-    #QQ
-        background #1cbcef
-    .QQ:before
-        content "\f1d6"
-    #微信
-        background #8cdc49
-    .微信:before
-        content "\f1d7"
-    #PayPal
-        background #03a4e4
-    .PayPal:before
-        content "\f1ed"
-    #StackOverflow
-        background #f48024
-    .StackOverflow:before
-        content "\f16c"
-    #Instagram
-        background #bab0a6
-    .Instagram:before
-        content "\f16d"
-    #Flickr
-        background #0365c8
-    .Flickr:before
-        content "\f16e"
+    // icon from Font Awesome
+    font-logo = RSS f09e #ef7522, 
+                Google f1a0 #c83d20,
+                Twitter f099 #55cff8,
+                LinkedIn f0e1 #005a87,
+                Email f003 #6fc0e4,
+                Facebook f09a #3b5998,
+                QQ f1d6 #1cbcef,
+                '微信' f1d7 #8cdc49,
+                PayPal f1ed #03a4e4,
+                StackOverflow f16c #f48024,
+                Instagram f16d #bab0a6,
+                Flickr f16e #0365c8
+
+    for i in font-logo
+        .{i[0]}:before
+            content '\' + i[1]
+        #{i[0]}
+            background i[2]
 
 .duoshuo {
     padding: 0 40px;

@@ -36,7 +36,7 @@
         }
     }
     .left-col {
-        background: rgba(255,255,255,.85);
+        background: left-col-color;
         width: left-col-width;
         position:fixed;
         opacity:1;
@@ -64,7 +64,7 @@
         position:absolute;
         right:0;
         min-height:100%;
-        background: rgba(255,255,255,.8);
+        background: mid-col-color;
         left: left-col-width;
         width: auto;
     }
@@ -239,6 +239,7 @@
         background #6f7170
         opacity .58
         text-align center
+        box-shadow: 1px 2px 2px rgba(0,0,0, .1), 1px 1px 3px rgba(0,0,0, .3);
         a
             line-height 37px
             color white
@@ -343,7 +344,7 @@
 
 .hide-labels {
     position: fixed;
-    left: 378px;
+    left: left-col-width + 78px;
     top: 30px;
     padding: 1px;
     border: none;

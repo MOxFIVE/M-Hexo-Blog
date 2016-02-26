@@ -10,7 +10,8 @@
             else {
                 var backgroundnum = <%= theme.background_image %>;
                 var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+                $("#container").before("<div class=background></div>");
+                $(".background").css({"background-image": backgroundimg});
             }
         })
     </script>

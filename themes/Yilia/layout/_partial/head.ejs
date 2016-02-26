@@ -33,15 +33,15 @@
   <% } %>
   <link href="//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet">
   <%- css('css/style') %>
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="<%= config.root %>/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="<%= config.root %>/apple-touch-icon.png">
   <% if (is_home()){ %>
     <!-- Site Verification -->
     <meta name="baidu-site-verification" content="ai9YVe01DX" />
     <meta name="google-site-verification" content="VR0pjVypb6rfBUkK2IJnVqqEXeB9-jZzXpZDiWa6Q18" />
   <% } %>
   <% if (theme.fancybox){ %>
-      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+      <link rel="stylesheet" href="<%= config.root %>/fancybox/jquery.fancybox.css">
   <% } %>
   <script>
       var yiliaConfig = {
@@ -52,7 +52,8 @@
           isArchive: <%=is_archive()%>,
           isTag: <%=is_tag()%>,
           isCategory: <%=is_category()%>,
-          open_in_new: <%=theme.open_in_new%>
+          open_in_new: <%=theme.open_in_new%>,
+          root: <%= config.root %>
       }
   </script>    
   <script>/*Tongji*/

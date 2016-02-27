@@ -2,14 +2,14 @@ require([], function (){
 
     var isMobileInit = false;
     var loadMobile = function(){
-        require(['yiliaConfig.root + /js/mobile.js'], function(mobile){
+        require(['/js/mobile.js'], function(mobile){
             mobile.init();
             isMobileInit = true;
         });
     }
     var isPCInit = false;
     var loadPC = function(){
-        require(['yiliaConfig.root + /js/pc.js'], function(pc){
+        require(['/js/pc.js'], function(pc){
             pc.init();
             isPCInit = true;
         });
@@ -55,7 +55,7 @@ require([], function (){
 
     //是否使用fancybox
     if(yiliaConfig.fancybox === true){
-        require([yiliaConfig.root + '/fancybox/jquery.fancybox.js'], function(pc){
+        require(['/fancybox/jquery.fancybox.js'], function(pc){
             var isFancy = $(".isFancy");
             if(isFancy.length != 0){
                 var imgArr = $(".article-inner img");
@@ -72,7 +72,7 @@ require([], function (){
     //是否开启动画
     if(yiliaConfig.animate === true){
 
-        require([yiliaConfig.root + '/js/jquery.lazyload.js'], function(){
+        require(['/js/jquery.lazyload.js'], function(){
             //avatar
             $(".js-avatar").attr("src", $(".js-avatar").attr("lazy-src"));
             $(".js-avatar")[0].onload = function(){
@@ -151,7 +151,6 @@ require([], function (){
     $("#container #mobile-nav .overlay").css({"background-color": colorList[id],"opacity": .7});
 
     $("table").wrap("<div class='table-area'></div>");
-
 
     var tags = $(".tagcloud a");
     for(var i = 0; i < tags.length; i++){

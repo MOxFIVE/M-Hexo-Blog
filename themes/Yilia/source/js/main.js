@@ -151,4 +151,12 @@ require([], function (){
     $("#container #mobile-nav .overlay").css({"background-color": colorList[id],"opacity": .7});
 
     $("table").wrap("<div class='table-area'></div>");
+
+
+    var tags = $(".tagcloud a");
+    for(var i = 0; i < tags.length; i++){
+        var num = parseInt(4*Math.random()) + 1;
+        tags.eq(i).addClass("color" + num);
+    }
+    $(".article-category a:nth-child(-n+2)").attr("class", "color5");
 });

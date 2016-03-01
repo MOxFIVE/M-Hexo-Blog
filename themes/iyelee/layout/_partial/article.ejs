@@ -21,6 +21,7 @@
       <% } %>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
+      <%- partial('post/intro') %>
       <% if (index && (post.description || post.excerpt)){ %>
           <% if (post.description){ %>
               <%- post.description %>
@@ -91,4 +92,20 @@
             yiliaConfig.fancybox = false;
         <% } %>
     </script>
+<% } %>
+
+<% if (index) { %>
+    <style>
+        #post-blog-building .article-tag {
+            display: none;
+        }
+    </style>
+<% } %>
+
+<% if (post.slug === "blog-building"){ %>
+    <style>
+        .toc-level-3 .toc-number {
+            display: none;
+        }
+    </style>
 <% } %>

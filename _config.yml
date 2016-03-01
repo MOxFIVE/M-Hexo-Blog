@@ -46,7 +46,7 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
-tag_map:
+tag_map: 
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -63,15 +63,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: iyelee
+theme: iYelee
+# https://github.com/litten/hexo-theme-yilia
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: 
-    github: git@github.com:MOxFIVE/MOxFIVE.github.io.git,master
-    gitcafe: git@gitcafe.com:MOxFIVE/MOxFIVE.git,gitcafe-pages
+	type: git
+	repo: 
+		github: git@github.com:MOxFIVE/MOxFIVE.github.io.git,master
+		gitcafe: git@gitcafe.com:MOxFIVE/MOxFIVE.git,gitcafe-pages
 
 index_generator:
   per_page: 15
@@ -83,3 +84,5 @@ archive_generator:
 
 tag_generator:
   per_page: 20
+
+disqus_shortname: 

@@ -150,7 +150,7 @@
     color: #9c9;
   }
   p{
-    margin: .85em auto;
+    margin: .45em auto;
     line-height: 1.7em;
     font-size: 1em;
   }
@@ -234,6 +234,9 @@
   }
   strong {
     font-weight: bold;
+  }
+  .note-intro {
+      margin-left: 2em;
   }
   .caption{
     display: block;
@@ -489,7 +492,7 @@ li:hover {
 .copyright {
     width: 85%;
     max-width: 45em;
-    margin: 0 auto;
+    margin: 1.2em auto 0;
     padding: .5em 1.8em;
     border: 1px solid lightgray;
     font-size: .93em;
@@ -502,6 +505,9 @@ li:hover {
         color: #B5B5B5;
         font-weight: bold;
     }
+    .raw {
+        margin-left: 1em;
+    }
     a {
         color: gray;
         &:hover {
@@ -511,6 +517,9 @@ li:hover {
     }
     &:hover p .copy-path::after {
         content: "复制";
+    }
+    .post-url:hover {
+        font-weight: normal;
     }
     .copy-path {
         display: inline-block;
@@ -522,3 +531,6 @@ li:hover {
     }
 }
 
+.table-area {
+    overflow: auto;
+}

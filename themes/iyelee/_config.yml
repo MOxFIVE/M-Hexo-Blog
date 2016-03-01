@@ -5,17 +5,16 @@
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  主页: /
-  所有文章: /archives/
-  #随笔: /tags/随笔
+  所有文章: /archives
   标签云: /tags/
-  关于我: /about/
+  留言板: /about/
+  建站日志: /2015/08/20/blog-building
 
 # Link to your avatar | 填写头像地址
-avatar: /img/avatar.png
+avatar: /resources/Mihawk.png
 
 # Small icon of Your site | 站点小图标地址
-favicon: /favicon.png
+favicon: /resources/favicon.ico
 
 # If your site' url is 'http://yoursite.com/blog', set root_url as '/blog/'
 # 网站若存放在子目录，请按上面格式填写
@@ -29,10 +28,10 @@ root_url:
 ## https://github.com/hexojs/hexo-generator-feed
 
 subnav:
-  Email: "mailto:123@123.com"
-  #新浪微博: "sina weibo"
-  GitHub: "#"
-  #V2EX: "#"
+  Email: "mailto:&#0000109;&#0000111;&#x0000031;&#0048;&#x0000030;&#0048;&#000053;&#000064;&#00000111;&#0117;&#00116;&#x000006c;&#0111;&#111;&#00107;&#x002e;&#x00063;&#00000111;&#00109;"
+  新浪微博: //weibo.com/yemzh
+  GitHub: //github.com/MOxFIVE
+  V2EX: //www.v2ex.com/member/MOxFIVE
   RSS: "/atom.xml"
   #知乎: "zhihu"
   #豆瓣: "douban"
@@ -42,7 +41,7 @@ subnav:
   #虾米音乐: "xiami"
   #Facebook: "#"
   #Google: "#"
-  #Twitter: "#"
+  Twitter: "//twitter.com/MOxFE"
   #LinkedIn: "#"
   #QQ: "#"
   #微信: "Wechat"
@@ -52,7 +51,7 @@ subnav:
   #Flickr: "#"
   #reddit: ""
   #Medium: ""
-  #TiddlyWiki: ""
+  TiddlyWiki: "/wiki/"
   #Tumblr: ""
   #_500px: ""
 
@@ -68,8 +67,8 @@ disqus:
   # you have set "disqus_shortname" in your site's "_config.yml" 
 
 duoshuo: 
-  #on: true
-  domain: 
+  on: true
+  domain: moxfive
   # 是否开启多说评论，http://duoshuo.com/create-site/
   # 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
@@ -91,7 +90,7 @@ youyan:
 background_image: 5
 
 highlight_style:
-  #on: true
+  on: true
   inline_code: 1  # Value: 0 - 9 可选
   code_block: 1  # Value: 0 - 4 
   # Set inline_code to style highlight text
@@ -105,7 +104,7 @@ blockquote_style:
   # 自定义文章「引用部分」的样式
 
 # 左边栏宽度 px
-left_col_width: 300
+left_col_width: 308
 
 # Copyright info. of post | 文末版权信息
 copyright: true
@@ -131,7 +130,7 @@ animate: true
 
 # Load jQuery UI to style tooltips
 # 工具提示框样式美化
-jquery_ui: false
+jquery_ui: true
 
 # >>> Small features | 小功能设置 <<<
 
@@ -141,9 +140,14 @@ tagcloud: true
 
 # Blogroll, Link exchange | 友情链接
 friends:
-  Hexo: https://hexo.io
-  GitHub: https://pages.github.com/
-  MOxFIVE: http://moxfive.xyz/
+  Hexo: //hexo.io
+  GitHub: //pages.github.com/
+  Netcan: //www.netcan666.com/
+  Ryuu: //f2e-tlj.me/
+  Andy Zheng: //codinglife.in/
+  skyxuan: //syncshinee.github.io/
+  世平阜康: //luuman.github.io/
+
 #friends: false
 
 #是否开启“关于我”。
@@ -173,15 +177,15 @@ share: true
 
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
-baidu_site: 
-google_site: 
+baidu_site: ai9YVe01DX
+google_site: VR0pjVypb6rfBUkK2IJnVqqEXeB9-jZzXpZDiWa6Q18
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X
 google_analytics: 
 
 # 百度统计 http://sitecenter.baidu.com/sc-web/
 # 查看代码，填入 //hm.baidu.com/hm.js? 之后的内容
-baidu_tongji: 
+baidu_tongji: a4938c90e05043bd9774ff12368e45aa
 
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
@@ -192,4 +196,4 @@ visit_counter:
 
 # GitHub Repo Widget
 # https://github.com/hustcc/GitHub-Repo-Widget.js
-github_widget: false
+github_widget: 1

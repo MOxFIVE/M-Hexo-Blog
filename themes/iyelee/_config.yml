@@ -103,6 +103,8 @@ blockquote_style:
   blockquote: 1  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
 
+color_scheme: 
+
 # 左边栏宽度 px
 left_col_width: 308
 

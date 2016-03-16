@@ -57,6 +57,23 @@
     <%- partial('post/nav') %>
   <% } %>
 </article>
+
+<% if (index) { %>
+    <style>
+        #post-blog-building .article-tag {
+            display: none;
+        }
+    </style>
+<% } %>
+
+<% if (post.slug === "blog-building"){ %>
+    <style>
+        .toc-level-3 .toc-number {
+            display: none;
+        }
+    </style>
+<% } %>
+
 <% if (!index && ((post.toc != false && !is_page() && theme.toc) || post.toc)){ %>
     <%- partial('_partial/toc') %>
 <% } %>
@@ -92,20 +109,4 @@
             yiliaConfig.fancybox = false;
         <% } %>
     </script>
-<% } %>
-
-<% if (index) { %>
-    <style>
-        #post-blog-building .article-tag {
-            display: none;
-        }
-    </style>
-<% } %>
-
-<% if (post.slug === "blog-building"){ %>
-    <style>
-        .toc-level-3 .toc-number {
-            display: none;
-        }
-    </style>
 <% } %>

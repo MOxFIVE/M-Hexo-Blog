@@ -160,7 +160,7 @@ require([], function (){
     // Hide Labels
     if(yiliaConfig.isArchive || yiliaConfig.isTag || yiliaConfig.isCategory) {
         $(document).ready(function() {
-            $("#footer").after("<button class='hide-labels'>TAG 开关</button>");
+            $("#footer").after("<button class='hide-labels'>TAGS</button>");
             $(".hide-labels").click(function() {
                 $(".article-info").toggle(200);
             });

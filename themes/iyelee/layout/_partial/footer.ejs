@@ -12,7 +12,7 @@
             <div class="visit">
                 <% if (theme.visit_counter.site_visit) { %>
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" ><%= theme.visit_counter.site_visit %>: 
+                        <span id="site-visit" ><%= __('visit_counter.site') %>: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -22,7 +22,7 @@
                 <% } %>
                 <% if (theme.visit_counter.page_visit) { %>
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"><%= theme.visit_counter.page_visit %>: 
+                        <span id="page-visit"><%= __('visit_counter.page') %>: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>

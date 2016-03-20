@@ -1,18 +1,18 @@
-# Tables of Contents
 index:
   menu: Menu
   tags: Tags
   friends: Friends
   about: About Me
-  more: More
+  more: more
 
+# Tables of Contents
 toc:
   title: Contents
   hide: Hide
   show: Show
 
 visit_counter:
-  site: Site Visitor
+  site: Site Visitors
   page: Page Hits
 
 tooltip:

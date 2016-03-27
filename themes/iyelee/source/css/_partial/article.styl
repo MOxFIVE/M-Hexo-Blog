@@ -146,7 +146,6 @@ if !hexo-config("animate")
   margin: -30px 0 20px 30px;
 }
 .article-entry{
-  @require "customise/blockquote"
   line-height: 1.65em;
   padding:0 2em;
   a:hover {
@@ -158,40 +157,9 @@ if !hexo-config("animate")
     line-height: 1.7em;
     font-size: 1em;
   }
-  li{
-    margin: 0.1em
-    font-size: 1.1em;
-  }
   em {
     font-style: italic;
   }
-  ul{
-    li:before{
-      display inline-block;
-      content: "";
-      width: .4em;
-      height: .4em;
-      margin-right: .5em;
-      margin-bottom: .11em;
-      border: 1px solid lightgray;
-      border-radius: 50%;
-      background: lightgray;
-    }
-  }
-  ul,ol{
-    font-size: 14px;
-    margin: 10px 0px;  
-  }
-  li{
-    ul,ol{
-      margin-left: 30px;
-      li:before{
-        content: "";
-        background: #dedede;
-      }
-    }
-  }
-  @import "customise/heading"
   video{
     max-width: 100%;
   }
@@ -215,6 +183,9 @@ if !hexo-config("animate")
     border-top: 1px solid #DDD;
     border-bottom: 1px solid #FFF;
   }
+  @require "customise/blockquote"
+  @import "customise/list"
+  @import "customise/heading"
   @import "customise/table"
   figure{
     table {

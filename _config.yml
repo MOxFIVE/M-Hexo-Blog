@@ -40,7 +40,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -72,7 +72,6 @@ deploy:
 	type: git
 	repo: 
 		github: git@github.com:MOxFIVE/MOxFIVE.github.io.git,master
-		gitcafe: git@gitcafe.com:MOxFIVE/MOxFIVE.git,gitcafe-pages
 
 index_generator:
   per_page: 15

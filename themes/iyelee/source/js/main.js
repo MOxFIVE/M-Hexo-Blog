@@ -167,4 +167,14 @@ require([], function (){
         });
     }
 
+    if ($("#GitHub").length) {
+        $.ajax({
+            url: '../img/GitHub.png',
+            type: 'HEAD',
+            error: function() {
+                $("#GitHub").css("background-image", "url(../img/V2EX.png)");
+            }
+        });
+    }
+
 });

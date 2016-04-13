@@ -79,7 +79,7 @@
     text-align: center;
     margin: 13px 0;
     font-family: Roboto, "Roboto", serif;
-    font-size: default-font-size + 14;
+    font-size: base-font-size + 14;
     transition: 0.3s;
 }
 #header{
@@ -95,8 +95,8 @@
         display: block;
         border: 5px solid #fff;
         border-radius: 50%;
-        width: 128px;
-        height: 128px;
+        width: 128 + base-font-size - 16;
+        height: @width;
         margin: 0 auto;
         position: relative;
         overflow: hidden;
@@ -135,8 +135,8 @@
     .header-subtitle{
         text-align: center;
         color:#999;
-        font-size: .875rem;
-        line-height: 1.56rem;
+        font-size: (14/16)rem;
+        line-height: 1.75;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -144,15 +144,15 @@
         -webkit-box-orient: vertical;
     }
     .header-menu{
-        menu-line-height = 28px
+        menu-line-height = 2
         font-weight: 550;
         line-height: menu-line-height;
         font-family: inherit;
         cursor: pointer;
         text-transform: uppercase;
         float: none;
-        min-height: menu-line-height * 3px;
-        max-height: menu-line-height * 5px;
+        min-height: @line-height * 3;
+        max-height: @line-height * 5;
         overflow: auto;
         text-align: center;
         display: -webkit-box;
@@ -162,7 +162,7 @@
         li{
             cursor: default;
             a{
-                font-size: default-font-size - 2px;
+                font-size: (14/16)rem;
                 min-width: left-col-width;
             }
         }
@@ -172,7 +172,7 @@
         width: 100%;
         overflow: hidden;
         min-height: 260px;
-        font-size: .875rem;
+        font-size: (14/16)rem;
         .switch-wrap{
             transition: transform .3s ease-in;
             position: relative;

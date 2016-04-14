@@ -43,9 +43,12 @@
 
 <% if (theme.toc_nowrap) { %>
     <style>
-        .toc {
-            white-space: nowrap;
-            overflow-x: hidden;
+        .toc-link {
+            display: inline-block;
+            white-space: nowrap; 
+            width: 100%; 
+            overflow-x: hidden; 
+            text-overflow: ellipsis;
         }
     </style>
 

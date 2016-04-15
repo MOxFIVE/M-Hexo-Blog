@@ -39,7 +39,7 @@
       <link href="//cdn.bootcss.com/pace/1.0.2/themes/<%= theme.progressBar.color || 'blue'%>/pace-theme-<%= theme.progressBar.type || 'minimal'%>.css" rel="stylesheet">
   <% } %>
   <%- css('css/style') %>
-  <%- css('font-awesome/css/font-awesome.min') %>
+  <%- css('//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css') %>
   <link rel="apple-touch-icon" href="<%- theme.root_url %>/apple-touch-icon.png">
   <% if (is_home()){ %>
     <% if (theme.baidu_site) { %> 
@@ -75,7 +75,6 @@
           yiliaConfig.rootUrl = "/";
       </script>
   <% } %>
-
   <% if (theme.baidu_tongji){ %>
       <script>
           var _hmt = _hmt || [];

@@ -175,7 +175,9 @@ fancybox: true
 mathjax: false
 
 # Socail Share | 是否开启分享
-share: true
+share: 
+  on: true
+  baidu: true
 
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
@@ -210,3 +212,17 @@ progressBar:
   on: true
   type: "minimal"
   color: blue
+
+CDN:
+  animate_css: //cdn.bootcss.com/animate.css/3.5.0/animate.min.css
+  fancybox_css: //cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css
+  fancybox_js: //cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js
+  pace_js: //cdn.bootcss.com/pace/1.0.2/pace.min.js
+  fontawesome: //cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css
+  jquery: //cdn.bootcss.com/jquery/1.9.1/jquery.min.js
+  jquery_ui_js: //cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js
+  jquery_ui_css: //cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css
+  clipboard: //cdn.bootcss.com/clipboard.js/1.5.9/clipboard.min.js
+  require: //cdn.bootcss.com/require.js/2.1.22/require.min.js
+  mathjax: //cdn.bootcss.com/mathjax/2.6.1/MathJax.js
+  scrollreveal: //cdn.bootcss.com/scrollReveal.js/3.0.9/scrollreveal.min.js

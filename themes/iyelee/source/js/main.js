@@ -55,7 +55,7 @@ require([], function (){
 
     //是否使用fancybox
     if(yiliaConfig.fancybox === true){
-        require([yiliaConfig.rootUrl + 'fancybox/jquery.fancybox.js'], function(pc){
+        require([yiliaConfig.fancybox_js], function(pc){
             var isFancy = $(".isFancy");
             if(isFancy.length != 0){
                 var imgArr = $(".article-inner img");
@@ -81,10 +81,7 @@ require([], function (){
       if(yiliaConfig.isHome === true) {
         // 滚动条监听使用scrollreveal.js
         // https://github.com/jlmakes/scrollreveal.js
-        // 使用cdn[//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js]
-        require([
-          '//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js'
-        ], function (ScrollReveal) {
+        require([yiliaConfig.scrollreveal], function (ScrollReveal) {
           // 更多animation:
           // http://daneden.github.io/animate.css/
           var animationNames = [

@@ -26,3 +26,9 @@ tooltip:
   go2bottom: Go to Bottom
   Hexo: "A fast, simple & powerful blog framework"
   Yelee: Another simple and elegant theme for Hexo
+
+tag_cloud:
+  already: " "
+  categories: Categories, 
+  total: " "
+  tags: Tags

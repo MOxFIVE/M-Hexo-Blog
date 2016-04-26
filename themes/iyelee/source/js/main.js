@@ -176,5 +176,36 @@ require([], function (){
         }
         $(".article-entry > pre").css("background-color", highlight.background);
         $(".article-entry > pre code").css("color", highlight.foreground);
+    });
+
+    // Task lists in markdown
+    $('ul > li').each(function() {
+        var taskList = {
+            field: $(this).text().substring(0, 2),
+            check: function(str) {
+                var re = new RegExp(str);
+                return this.field.match(re);
+            }
+        }
+
+        var string = ["[ ]", ["[x]", "checked"]];
+        var checked = taskList.check(string[1][0]);
+        var unchecked = taskList.check(string[0]);
+
+        var $current = $(this);
+        function add(str, check) {
+            $current.html($current.html().replace(str, ""));
+            // In order  html > prepend
+            $current.prepend("<input type='checkbox'" + check + ">");
+        }
+
+        if (checked || unchecked) {
+            $(this).addClass('task-list');
+            if (checked) {
+                add(string[1][0], string[1][1]);
+            } else {
+                add(string[0], "");
+            }
+        }
     })
 });

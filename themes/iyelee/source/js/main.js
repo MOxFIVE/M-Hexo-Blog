@@ -168,4 +168,13 @@ require([], function (){
         });
     }
 
+    // text-block
+    $(document).ready(function() {
+        var highlight = {
+            background: $(".article-entry .highlight").css("background"),
+            foreground: $(".article-entry .highlight").css("color")
+        }
+        $(".article-entry > pre").css("background-color", highlight.background);
+        $(".article-entry > pre code").css("color", highlight.foreground);
+    })
 });

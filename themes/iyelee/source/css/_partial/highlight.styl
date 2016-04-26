@@ -1,150 +1,161 @@
-@require "customise/code-block"
+code_block = hexo-config("code_block")
+
+@require "highlight/tomorrow"
 
 $code-block
-  background: highlight-background
-  margin: auto
-  padding: .35em 1.5em
-  border-style: solid
-  border-color: color-border
-  border-width: 1px
-  overflow: auto
-  color: highlight-foreground
-  line-height: 1.3rem
-
-$line-numbers
-  color: lightgray
-  font-size: .85em
-
-.article-entry
-  pre, code
-    font-family: font-mono, font-chs, monospace
-    font-size: 1em
-  pre
-    @extend $code-block
-    code
-      text-shadow none
-      padding 0
-      background none
-      color highlight-foreground
-  .highlight
-    @extend $code-block
-    border-radius: 2px
-    max-height: 50em
-    margin-top: .5em
-    margin-bottom: 1em
-    overflow: auto
-    pre
-      background: none
-      border: none
-      margin: 0
-      padding: 0
-    table
-      margin: 0
-      width: auto
-    td
-      border: none
-      padding: 0
-    figcaption
-      clearfix()
-      font-size: 0.85em
-      color: highlight-comment
-      line-height: 1em
-      margin-bottom: 1em
-      a
-        float: right
-    .gutter pre
-      @extend $line-numbers
-      text-align: right
-      padding-right: 1em
-    .line
-      height: 1.3rem
-  .gist
-    margin: 0 article-padding * -1
+    background: highlight-background
+    margin: auto
+    padding: .35em 1.5em
     border-style: solid
     border-color: color-border
-    border-width: 1px 0
-    background: highlight-background
-    padding: 15px article-padding 15px 0
-    .gist-file
-      border: none
-      font-family: font-mono, monospace
-      margin: 0
-      .gist-data
-        background: none
-        border: none
-        .line-numbers
-          @extend $line-numbers
-          background: none
-          border: none
-          padding: 0 20px 0 0
-        .line-data
-          padding: 0 !important
-      .highlight
-        margin: 0
-        padding: 0
-        border: none
-      .gist-meta
-        background: highlight-background
-        color: highlight-comment
-        font: 0.85em font-sans
-        text-shadow: 0 0
-        padding: 0
-        margin-top: 1em
-        margin-left: article-padding
-        a
-          color: color-link
-          font-weight: normal
-          &:hover
-            text-decoration: underline
+    border-width: 1px
+    overflow: auto
+    color: highlight-foreground
+    line-height: 1.3rem
+
+$line-numbers
+    color: lightgray
+    font-size: .85em
+
+.article-entry
+    pre, code
+        font-family: font-mono, font-chs, monospace
+        font-size: 1em
+    pre
+        @extend $code-block
+        code
+            text-shadow none
+            padding 0
+            background none
+            color highlight-foreground
+    .highlight
+        @extend $code-block
+        border-radius: 2px
+        max-height: 50em
+        margin-top: .5em
+        margin-bottom: 1em
+        overflow: auto
+        pre
+            background: none
+            border: none
+            margin: 0
+            padding: 0
+        table
+            margin: 0
+            width: auto
+        td
+            border: none
+            padding: 0
+        figcaption
+            clearfix()
+            font-size: 0.85em
+            color: highlight-comment
+            line-height: 1em
+            margin-bottom: 1em
+            a
+                float: right
+        .gutter pre
+            @extend $line-numbers
+            text-align: right
+            padding-right: 1em
 
 @require "customise/inline-code.styl"
 
 pre
-  .comment
-  .title
-    color: highlight-comment
-  .variable
-  .attribute
-  .tag
-  .regexp
-  .ruby .constant
-  .xml .tag .title
-  .xml .pi
-  .xml .doctype
-  .html .doctype
-  .css .id
-  .css .class
-  .css .pseudo
-    color: highlight-red
-  .number
-  .preprocessor
-  .built_in
-  .literal
-  .params
-  .constant
-    color: highlight-orange
-  .class
-  .ruby .class .title
-  .css .rules .attribute
-    color: highlight-green
-  .string
-  .value
-  .inheritance
-  .header
-  .ruby .symbol
-  .xml .cdata
-    color: highlight-green
-  .css .hexcolor
-    color: highlight-aqua
-  .function
-  .python .decorator
-  .python .title
-  .ruby .function .title
-  .ruby .title .keyword
-  .perl .sub
-  .javascript .title
-  .coffeescript .title
-    color: highlight-blue
-  .keyword
-  .javascript .function
-    color: highlight-purple
+    .comment
+    .quote
+    .title
+        color: highlight-comment
+
+    .variable
+    .attribute
+    .tag
+    .regexp
+    .ruby .constant
+    .xml .tag .title
+    .xml .pi
+    .xml .doctype
+    .html .doctype
+    .css .id
+    .css .class
+    .css .pseudo
+    .template-variable
+    .name
+    .selector-id
+    .selector-class
+    .deletion
+        color: highlight-red
+
+    .number
+    .preprocessor
+    .built_in
+    .literal
+    .params
+    .constant
+    .builtin-name
+    .type
+    .meta
+    .link 
+        color: highlight-orange
+
+    .attribute
+        color highlight-yellow
+
+    .class
+    .ruby .class .title
+    .css .rules .attribute
+    .string
+    .symbol
+    .bullet
+    .addition
+        color: highlight-green
+
+    .string
+    .value
+    .inheritance
+    .header
+    .ruby .symbol
+    .xml .cdata
+        color: highlight-green
+
+    .css .hexcolor
+        color: highlight-aqua
+
+    .function
+    .python .decorator
+    .python .title
+    .ruby .function .title
+    .ruby .title .keyword
+    .perl .sub
+    .javascript .title
+    .coffeescript .title
+    .title
+    .section
+        color: highlight-blue
+
+    .keyword
+    .javascript .function
+    .selector-tag
+        color: highlight-purple
+
+    .emphasis
+         font-style: italic
+    .strong
+         font-weight: bold
+
+highlight-list = 0 github-gist , 6 zenburn, 7 original, 8 xcode,
+                9 androidstudio, 10 ascetic, 11 atelier-dune-light, 12 atelier-plateau-light,
+                13 codepen-embed, 14 darkula, 15 github, 16 googlecode,
+                17 gruvbox-dark, 18 gruvbox-light, 19 hopscotch, 20 hybrid,
+                21 monokai-sublime, 22 railscasts, 23 rainbow, 24 solarized-dark,
+                25 solarized-light, 26 sunburst, 27 vs
+
+for i in highlight-list
+    code-opacity = .8
+    if code_block == i[0]
+        @import "highlight/" + i[1]
+
+.article-entry pre
+    background highlight-background
+    code
+        color highlight-foreground

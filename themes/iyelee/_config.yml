@@ -89,23 +89,18 @@ youyan:
 ## "0": white-gray background | 淳朴灰白背景
 background_image: 5
 
-# Highlight Style | 高亮样式
-
-## Set inline_code to style highlight text
-## 通过 inline_code 切换内置文本高亮样式
+# Highlight style for text | 行内文本高亮样式
 inline_code: 1  # Value: 0 - 9 可选
 
-## Chose a highlight theme for code block
-## 通过 code_block 切换内置代码高亮配色主题
-code_block: 5  # Value: 0 - 28 可选
-
+# Highlight theme for code block | 代码高亮配色主题
+code_block: 1  # Value: 0 - 27 可选
 
 blockquote_style:
   #on: true
   blockquote: 1  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
 
-heading_style: 1
+heading_style: 0
 
 color_scheme: 
 

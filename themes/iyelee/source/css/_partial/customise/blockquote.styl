@@ -8,29 +8,19 @@ blockquote
     blockquote
         border-left none
 
-    blockquote_style = hexo-config("blockquote_style.on")
-    blockquote = hexo-config("blockquote_style.blockquote")
+    blockquote = hexo-config("blockquote_style")
+    blockquote-style = 1 5px rgba(112, 134, 142, .85) rgba(255, 255, 255, .7),
+                       2 10px rgba(102,128,153,0.08) rgba(102,128,153,0.08),
+                       3 5px rgba(255, 224, 112, .6) rgba(255, 244, 204, .6),
+                       4 5px rgba(85, 138, 187, .8) rgba(255, 255, 255, .7),
+                       5 4px #ddd none,
+                       6 5px rgba(0, 153, 100, .62) none,
+                       7 3px rgba(0,0,0,0.8) none
 
-    if blockquote_style
-        if blockquote
-            border-left 5px solid rgba(112, 134, 142, .85)
-            background rgba(255, 255, 255, .7)
-        if blockquote == "2"
-            border-left 10px solid rgba(102,128,153,0.08)
-            background rgba(102,128,153,0.08)
-        if blockquote == "3"
-            border-left 5px solid rgba(255, 224, 112, .6)
-            background rgba(255, 244, 204, .6)
-        if blockquote == "4"
-            border-left 5px solid rgba(85, 138, 187, .8)
-            background rgba(255, 255, 255, .7)
-        if blockquote == "5"
-            border-left-color #ddd
-            background none
-        if blockquote == "6"
-            border-left 5px solid rgba(0, 153, 100, .62)
-            padding 10.5px 21px
-            background none
-        if blockquote == "7"
-            border-left 3px solid rgba(0,0,0,0.8)
-            background none
+    for i in blockquote-style
+        if blockquote == i[0]
+            border-left i[1] solid i[2]
+            background i[3]
+
+    if blockquote == "6"
+        padding 10.5px 21px

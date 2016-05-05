@@ -95,10 +95,9 @@ inline_code: 1  # Value: 0 - 9 可选
 # Highlight theme for code block | 代码高亮配色主题
 code_block: 1  # Value: 0 - 27 可选
 
-blockquote_style:
-  #on: true
-  blockquote: 1  # Value: 0 - 7 可选
-  # 自定义文章「引用部分」的样式
+# 自定义文章「引用部分」的样式
+blockquote_style: 0  # Value: 0 - 7 可选
+
 
 heading_style: 0
 

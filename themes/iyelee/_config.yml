@@ -54,6 +54,10 @@ subnav:
   TiddlyWiki: "/wiki/"
   #Tumblr: ""
   #_500px: ""
+  #博客园: "cnblogs"
+  #CSDN: ""
+  #CodePen: ""
+  #Plunker: ""
 
 # >>> Conments 评论系统 <<<
 # Chose ONE as your comment system and keep others disable.

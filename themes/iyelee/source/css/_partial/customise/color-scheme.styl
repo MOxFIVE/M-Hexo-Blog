@@ -1,6 +1,3 @@
-color-scheme = hexo-config("color_scheme")
-background-image = hexo-config("background_image")
-
 if !background-image
     body
         background lightgray
@@ -49,52 +46,3 @@ if color-scheme == "yilia"
     .article-more-link a
         background #4d4d4d
         font-size .8em
-
-    .tagcloud a.color3
-        background #7B5D5F
-        &:before
-            border-right-color #7B5D5F
-
-    .tagcloud a.color5
-        background #BA8F6C
-        &:before
-            border-right-color #BA8F6C
-        &:hover 
-            background-color hover-color
-            border-color hover-color
-            &::before 
-                border-right-color hover-color
-                
-
-/*body {
-    color: #999;
-    background: #1a1a1a;
-}
-
-#container .mid-col {
-    background: none;
-}
-
-#container .left-col {
-    background: #202328;
-}
-
-#header .header-subtitle {
-    color: white;
-}
-
-#header a {
-    color: white;
-}
-
-.article-title {
-    color: #999;
-}
-
-.article .article-inner {
-    background: #3f3f3f;
-}
-
-#toc a{
-    color: white;
-}*/

@@ -249,6 +249,18 @@
         margin 5px 9px 5px 8px
         opacity i-opacity
         font-family inherit
+
+        color-list = #88acdb, lightsalmon, lightcoral,
+                     #76becc, #918597, #6fc0e4, rosybrown
+        if color-scheme == "yilia"
+            color-list = #ba8f6c #ff945c #7B5D5F #f5c7b7 #cfb7c4 #918597 rosybrown
+
+        for color, i in color-list
+            &.color{i}
+                background color
+                &::before
+                    border-right-color color
+
         &:hover
             opacity 1
             transform scale(1.06)
@@ -262,7 +274,7 @@
             height 0
             position absolute
             top 0
-            left -1.125rem
+            left -1.1rem
             border .5625rem solid transparent
         &:after
             content " "
@@ -274,67 +286,33 @@
             position absolute
             top .4375rem
             left 2px
-        &.color1
-            background #ff945c
-            &:before
-                border-right-color #ff945c
-        &.color2
-            background #f5c7b7
-            &:before
-                border-right-color #f5c7b7
-        &.color3
-            background #ba8f6c
-            &:before
-                border-right-color #ba8f6c
-        &.color4
-            background #cfb7c4
-            &:before
-                border-right-color #cfb7c4
-        &.color5
-            background #88acdb
-            &:before
-                border-right-color #88acdb
 
+.article-tag::before,
+.article-category::before
+    float left
+    color #999
+    font base-font-size FontAwesome
+    margin-right 5px
+    margin-top (1/3)rem
 
-.article-tag {
-    &::before {
-        float: left;
-        color: #999;
-        content: "\f02b";
-        font: base-font-size FontAwesome;
-        margin-left: 1em;
-        margin-right: 5px;
-        margin-top: (1/3)rem;
-    }
-}
-.article-category {
-    &::before {
-        float: left;
-        color: #999;
-        content: "\f02d";
-        font: base-font-size FontAwesome;
-        margin-right: 5px;
-        margin-top: (1/3)rem;
-    }
-}
-.article-pop-out {
-    float: left;
-    &:before{
-        float: left;
-        color: #999;
-        content: "\f08d";
-        font: base-font-size FontAwesome;
-        float: left;
-        //margin-right: 10px;
-        //margin-top: 9px;
-        margin-right: 5px;
-        margin-top: (1/3)rem;
-    }
-    &:after{
-        float: left;
-        content: "";
-        margin-right: 20px;
-        margin-top: 9px;
-        float: left;
-    }
-}
+.article-tag::before
+    content "\f02b"
+    margin-left 1em
+
+.article-category::before
+    content "\f02d"
+
+.article-pop-out
+    float left
+    &:before
+        color #999
+        content "\f08d"
+        font base-font-size FontAwesome
+        float left
+        margin-right 5px
+        margin-top (1/3)rem
+    &:after
+        float left
+        content ""
+        margin-right 20px
+        margin-top 9px

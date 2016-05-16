@@ -53,6 +53,15 @@ require([], function (){
         loadPC();
     }
 
+    resetTags = function(){
+        var tags = $(".tagcloud a");
+        for(var i = 0; i < tags.length; i++){
+            var num = parseInt(6*Math.random());
+            tags.eq(i).addClass("color" + num);
+        };
+        $(".article-category a:nth-child(-n+2)").attr("class", "color0");
+    }
+
     //是否使用fancybox
     if(yiliaConfig.fancybox === true){
         require([yiliaConfig.fancybox_js], function(pc){

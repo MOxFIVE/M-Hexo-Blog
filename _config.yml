@@ -63,15 +63,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: iYelee
-# https://github.com/litten/hexo-theme-yilia
+theme: Yelee
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-	type: git
-	repo: 
-		github: git@github.com:MOxFIVE/MOxFIVE.github.io.git,master
+  type: git
+  repo: 
+    github: git@github.com:MOxFIVE/MOxFIVE.github.io.git,master
 
 index_generator:
   per_page: 15

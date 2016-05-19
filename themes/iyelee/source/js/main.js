@@ -47,7 +47,7 @@ require([], function (){
         }
     });
 
-    if(browser.versions.mobile === true || $(window).width() < 700){
+    if(browser.versions.mobile === true || $(window).width() < 800){
         loadMobile();
     }else{
         loadPC();
@@ -56,7 +56,7 @@ require([], function (){
     resetTags = function(){
         var tags = $(".tagcloud a");
         for(var i = 0; i < tags.length; i++){
-            var num = parseInt(6*Math.random());
+            var num = parseInt(7*Math.random());
             tags.eq(i).addClass("color" + num);
         };
         $(".article-category a:nth-child(-n+2)").attr("class", "color0");

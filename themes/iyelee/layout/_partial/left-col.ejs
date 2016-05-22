@@ -12,8 +12,12 @@
         <p class="header-subtitle"><%=theme.subtitle%></p>
         <%}%>
         <% if (theme.search_box){ %>
-        <form><input type="text" class="search" placeholder=" Search..."></form>
-        <%}%>        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="search form-control" oninput="HideTocArea()" autocomplete="off" onkeydown="if(event.keyCode==13) return false;"/>
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+        <%}%>
 
 
         <%if(theme.tagcloud){%>

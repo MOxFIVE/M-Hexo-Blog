@@ -221,23 +221,6 @@ require([], function (){
     })
 });
 
-// Local Search
-var search_path = "search.xml";
-var path = yiliaConfig.rootUrl + search_path;
-searchFunc(path, 'local-search-input', 'local-search-result');
-
-var $HideWhenSearch = $("#toc, #tocButton, .post-list, #post-nav-button a:nth-child(2)");
-var $resetButton = $("#search-form .fa-times");
-var HideTocArea = function(){
-    $HideWhenSearch.css("visibility","hidden");
-    $resetButton.show();
-}
-var resetSearch = function(){
-    $HideWhenSearch.css("visibility","initial");
-    $("#local-search-result").html("");
-    document.querySelector("#search-form").reset();
-    $resetButton.hide();
-}
 
 
 /*var autoKeyword = [

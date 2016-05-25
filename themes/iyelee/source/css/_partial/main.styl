@@ -415,15 +415,25 @@ ul > li::before,
         line-height 1.2
         font-weight bold
         color #708090
-/*    a:visited
-        color #f58e90*/
     p.search-result
         margin .4em auto
-        line-height 1.2
+        line-height 1.2rem
+        max-height @line-height * 3rem
+        overflow hidden
         font-size .8rem
         text-align justify
+        color gray
     em.search-keyword
         border-bottom: 1px dashed #f58e90
         color #f58e90
         font-weight: bold
         font-size .85rem
+
+p.no-result
+    display none
+    margin 2em 0 2em 6%
+    padding-bottom .5em
+    text-align left
+    color gray
+    font-family font-serif serif
+    border-bottom 2px solid lightgray

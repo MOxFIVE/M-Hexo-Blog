@@ -80,10 +80,8 @@ var searchFunc = function(path, search_id, content_id) {
                             
                             str += "<p class=\"search-result\">" + match_content +"...</p>"
                         }
-                        str += "</li>";
                     }
                 });
-                str += "</ul>";
                 $resultContent.innerHTML = str;
             });
         }

@@ -376,8 +376,18 @@ li:hover {
         }
     }
     .toc-title {
+        margin-left: -.1em;
         font-weight: bold;
         color: gray;
+    }
+    .clickable {
+        cursor: pointer;
+        &:hover {
+          color: #88acdb
+        }
+        &:active {
+          color: lightgray
+        }
     }
     .toc {
         padding: .7em;
@@ -444,3 +454,16 @@ li:hover {
 .table-area {
     overflow: auto;
 }
+
+#toc .toc-item
+    i
+        display inline-block
+        margin-left -.9em
+        width .9em
+        color hsl(0, 0%, 70%)
+        font-weight: bold
+        cursor pointer
+        &:hover
+            color black
+    i.hide
+        display none

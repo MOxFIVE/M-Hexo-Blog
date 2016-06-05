@@ -467,3 +467,17 @@ li:hover {
             color black
     i.hide
         display none
+
+if toc-nowrap
+    #toc .toc-link 
+        display inline-block
+        width 100% 
+        text-overflow ellipsis
+        white-space nowrap
+        overflow-x hidden
+    li.toc-item
+        line-height: 1.45em
+    #toc .toc-item i
+        position: relative
+        bottom: .35em
+

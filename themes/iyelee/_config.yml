@@ -65,10 +65,13 @@ subnav:
 # Chose ONE as your comment system and keep others disable.
 # 选一个作为网站评论系统，其他保持禁用。
 
-
 preload_comment: false
 ## false: 当点击评论条等区域时再加载评论模块
 ## false: load comment's section until clicking/hover comment bar/icon
+
+show_count: true
+## 是否在主页文章标题旁显示评论数（多说、Disqus）
+## Add comment count after article title
 
 disqus: 
   #on: true

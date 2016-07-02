@@ -77,12 +77,12 @@ index_generator:
   per_page: 15
 
 archive_generator:
-  per_page: 20
+  per_page: 0
   yearly: true
   monthly: true
 
 tag_generator:
-  per_page: 20
+  per_page: 0
 
 disqus_shortname: 
 

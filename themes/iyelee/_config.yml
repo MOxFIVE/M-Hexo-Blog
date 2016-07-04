@@ -126,11 +126,11 @@ left_col_width: 308
 copyright: true
 
 # Table of contents | 文章目录
-toc: true
-
-# 目录中标题不换行
-# Keep TOC title on the same line | 
-toc_nowrap: true
+toc:
+  on: true
+  list_number: true
+  max_depth: 3  # 1 - 6 (h1-h6)
+  nowrap: true # Keep title on same line | 目录标题不换行
 
 # 自定义"阅读全文"链接按钮的显示文字
 # Customize the text on excerpt link
